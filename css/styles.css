@@ -84,6 +84,38 @@ img {
   font-size: 2rem;
   color: white;
 }
+.portfolio-container {
+  margin: 1rem auto 0 auto;
+}
+
+.portfolio-container h1 {
+  font-size: 2 rem;
+  line-height: 2rem;
+  color: cornflowerblue;
+}
+
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 0.5rem;
+  grid-auto-rows: 300px;
+}
+
+.gallery-item {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery-img {
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+
+.gallery-img:hover {
+  transform: scale(1.5);
+}
 
 /* Media Queeries Below */
 
@@ -96,6 +128,9 @@ img {
     font-size: 2.5rem;
     line-height: 2.5rem;
   }
+  .portf0lio-container h1 {
+    line-height: 3rem;
+  }
 }
 
 @media (min-width: 920px) {
@@ -106,5 +141,12 @@ img {
   .hero-text {
     font-size: 4rem;
     line-height: 4rem;
+  }
+  .portfolio-container {
+    max-width: 1400px;
+  }
+  .portfolio-container h1 {
+    font-size: 2rem;
+    line-height: 2rem;
   }
 }
