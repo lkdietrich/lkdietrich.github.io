@@ -7,16 +7,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/glightbox.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
   </head>
   <body>
     <header class="hero-box">
       <section class="hero-image-box">
-        <img
+        <!-- <img
           class="hero-image"
           scr="img/20210917 Dietrich Lucy atmospheric perspective copy.jpg"
           src="img/20210917 Dietrich Lucy atmospheric perspective copy.jpg"
           alt=""
-        />
+        /> -->
+        <video
+          src="video/IMG_2569.mp4"
+          class="hero-video"
+          autoplay
+          muted
+          loop
+        ></video>
       </section>
       <section class="hero-text-box">
         <h1 class="hero-heading">Heading</h1>
@@ -24,8 +32,8 @@
       </section>
     </header>
     <!-- Begin Portfolio Gallery -->
-    <section class="portfolio container">
-      <hi>Portfolio</hi>
+    <section class="portfolio-container">
+      <h1>Portfolio</h1>
       <section class="portfolio-gallery">
         <div class="gallery-item">
           <a class="glightbox" href="img/screen.png">
@@ -38,8 +46,11 @@
             href="img/IMG_2073.jpg"
             data-glightbox="title: Trees; description: Tall trees"
           >
-            <img class="gallery-img" src="img/IMG_2073.jpg" />
-            alt="img/IMG_2073.jpg" />
+            <img
+              class="gallery-img"
+              src="img/IMG_2073.jpg"
+              alt="img/IMG_2073.jpg"
+            />
           </a>
         </div>
         <div class="gallery-item">
@@ -93,6 +104,44 @@
         </div>
       </section>
     </section>
+    <!-- Begin aAbout Section-->
+    <section class="about-container">
+      <section class="about-text">
+        <h1>Lucy does things most of the time</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quasi,
+          quaerat nemo unde, ea harum omnis molestiae quisquam, voluptatum
+          cumque cupiditate suscipit nesciunt ipsum quae!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem accusantium debitis aliquam quo excepturi doloribus!
+        </p>
+        <p>
+          <a href="mailto:lkdietrich@student.cia.edu">Email me</a> at
+          lkdietrich@student.cia.edu
+        </p>
+
+        <section class="about-social">
+          <a
+            href="https://instagram.com/lucykdietrich_illustrations"
+            aria-label="Link to Instagram"
+          >
+            <i class="fab fa-instagram" aria-hidden="true"></i
+          ></a>
+          <a
+            href="https://github.com/lkdietrich/lkdietrich.github.io"
+            aria-label="Link to Github"
+          >
+            <i class="fab fa-github" aria-hidden="true"></i
+          ></a>
+        </section>
+      </section>
+      <section class="about image">
+        <img src="img/video-still.jpg" alt="Profile Image" />
+      </section>
+    </section>
+
     <script src="js/glightbox.min.js"></script>
     <script type="text/javascript">
       const lightbox = GLightbox({ loop: true });
